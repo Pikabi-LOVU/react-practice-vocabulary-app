@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Hello from "./component/Hello";
+import Welcome from "./component/Welcome";
 
+
+//component 함수는 JSX를 리턴한다
 function App() {
+
+  const website = {
+    name: "random.gg", 
+    url: "https://www.random.gg/ko"
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Hello />
+      <Welcome />
     </div>
   );
 }
